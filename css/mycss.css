@@ -1,0 +1,16 @@
+#title{
+    width: 416px;
+    height: 45px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 0.75em;
+    line-height: 35px;
+    text-align: center;
+    color: #5998C0;
+}
+
+#nav{
+    list-style-type: none;
+}
