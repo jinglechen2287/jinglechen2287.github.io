@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jingle Chen Design</title>
+  <meta name="description" content="Jingle Chen's self coded design portfolio. If you have any question, please contact Jingle at chen2287@purdue.edu">
+  <meta name="Jingle Chen" content="Jingle Chen">
+    
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/mycss.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Jquery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var docheight = $('html').height();
+            var docwidth = $('html').width();
+            var totalwidth = $(window).width();
+            //need to adjust the bg2 to squre
+            $("#bg2").css("top", docheight - docwidth + 'px');
+            console.log(docwidth);
+            var menu = true;
+            $("#menu").click(function(){
+              if (menu == true) {
+                  menu = false;
+                  $("nav ul li").css("display", "block");
+                  $("nav span").css("text-decoration", "underline");
+                  $("nav span").css("color", "#999999");
+              } else {
+                  menu = true;
+                  $("nav ul li").css("display", "none");
+                  $("nav span").css("text-decolaration", "none");
+                  $("nav span").css("color", "#393939");
+              }
+            });
+                //pic1
+                $("#item1").hover(function(){
+                    var imgheight = $(".img-item img").height();
+                    var windowwidth = $(window).width();
+                    $("#info1").css("border-radius", "15px");
+                    $("#info1").css("opacity", "1");
+                    $("#info1").animate({height: imgheight + 'px'});
+                    if (windowwidth>=900 || windowwidth<700) {
+                        $("#ptitle1").css("margin-top", "30%");
+                    }
+                    if (windowwidth>=700) {
+                        $("#ptitle1").css("font-size", "2.2vw");
+                    } else {
+                        $("#ptitle1").css("font-size", "1.5em");
+                    };
+                    $("#projectd1").html("<br>Build a communication channel to weave our community.");
+                }, function() {
+                    var windowwidth = $(window).width();
+                    $("#info1").css("border-radius", "0px 0px 15px 15px");
+                    $("#info1").css("opacity", "0.9");
+                    $("#ptitle1").css("margin-top", "0px");
+                    if (windowwidth>=700) {
+                        $("#ptitle1").css("font-size", "1.8vw");
+                    }else {
+                        $("#ptitle1").css("font-size", "1.5em");
+                    };
+                    $("#info1").animate({height: '75px'});
+                    $("#projectd1").html("");
+                });
+                //pic2
+                $("#item2").hover(function(){
+                    var imgheight = $(".img-item img").height();
+                    var windowwidth = $(window).width();
+                    $("#info2").css("border-radius", "15px");
+                    $("#info2").css("opacity", "1");
+                    $("#info2").animate({height: imgheight + 'px'});
+                    if (windowwidth>=900  || windowwidth<700) {
+                        $("#ptitle2").css("margin-top", "30%");
+                    }
+                    if (windowwidth>=700) {
+                        $("#ptitle2").css("font-size", "2.2vw");
+                    }
+                    $("#projectd2").html("<br>Alleviate the stress of maintaining personal relationship.");
+                }, function() {
+                    var windowwidth = $(window).width();
+                    $("#info2").css("border-radius", "0px 0px 15px 15px");
+                    $("#info2").css("opacity", "0.9");
+                    $("#ptitle2").css("margin-top", "0px");
+                    if (windowwidth>=700) {
+                        $("#ptitle2").css("font-size", "1.8vw");
+                    } else {
+                        $("#ptitle2").css("font-size", "1.5em");
+                    };
+                    $("#info2").animate({height: '75px'});
+                    $("#projectd2").html("");
+                });
+                //pic3
+                $("#item3").hover(function(){
+                    var imgheight = $(".img-item img").height();
+                    var windowwidth = $(window).width();
+                    $("#info3").css("border-radius", "15px");
+                    $("#info3").css("opacity", "1");
+                    $("#info3").animate({height: imgheight + 'px'});
+                    if (windowwidth>=900  || windowwidth<700) {
+                        $("#ptitle3").css("margin-top", "30%");
+                    }
+                    if (windowwidth>=700) {
+                        $("#ptitle3").css("font-size", "2.2vw");
+                    } else {
+                        $("#ptitle3").css("font-size", "1.5em");
+                    }
+                    $("#projectd3").html("<br>Make grocery shopping with kids fun and interactive.");
+                }, function() {
+                    var windowwidth = $(window).width();
+                    $("#info3").css("border-radius", "0px 0px 15px 15px");
+                    $("#info3").css("opacity", "0.9");
+                    $("#ptitle3").css("margin-top", "0px");
+                    if (windowwidth>=700) {
+                        $("#ptitle3").css("font-size", "1.8vw");
+                    } else {
+                        $("#ptitle3").css("font-size", "1.5em");
+                    };
+                    $("#info3").animate({height: '75px'});
+                    $("#projectd3").html("");
+                });
+                //pic4
+                $("#item4").hover(function(){
+                    var imgheight = $(".img-item img").height();
+                    var windowwidth = $(window).width();
+                    $("#info4").css("border-radius", "15px");
+                    $("#info4").css("opacity", "1");
+                    $("#info4").animate({height: imgheight + 'px'});
+                    if (windowwidth>=900 || windowwidth<700) {
+                        $("#ptitle4").css("margin-top", "30%");
+                    }
+                    if (windowwidth>=700) {
+                        $("#ptitle4").css("font-size", "2.2vw");
+                    } else {
+                        $("#ptitle4").css("font-size", "1.5em");
+                    };
+                    $("#projectd4").html("<br>My personal exercises for some design tools and methods.");
+                }, function() {
+                    var windowwidth = $(window).width();
+                    $("#info4").css("border-radius", "0px 0px 15px 15px");
+                    $("#info4").css("opacity", "0.9");
+                    $("#ptitle4").css("margin-top", "0px");
+                    if (windowwidth>=700) {
+                        $("#ptitle4").css("font-size", "1.8vw");
+                    } else {
+                        $("#ptitle4").css("font-size", "1.5em");
+                    };
+                    $("#info4").animate({height: '75px'});
+                    $("#projectd4").html("");
+                });
+        });
+    </script>
+</head>
+<body>
+    <div><img id="bg1" src="images/projectbg1.png"></div>
+    <div><img id="bg2" src="images/projectbg2.png"></div>
+    <div><img id="bg3" class="m-bg" src="images/projectbg3.png"></div>
+    <div style="z-index: 1;">
+        <div id="header">
+            <div id="title"><span><a href="index.html">Jingle Chen Design</a></span></div>
+            <nav id="nav" class = "topnav">
+                <span id="menu">Menu</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li id="currentnav"><a href="#">Projects</a></li>
+                    <li><a href="http://www.chenjingle.photos" target ="_blank">Photography</a></li>
+                     <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+      <!-- Primary Page Layout
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div id="main" class="container">
+            <h1>Projects</h1>
+            <div id="projectpic">
+                <div class="picitem">
+                    <a href="#" target="_blank">
+                        <div class="img-item" id="item1">
+                            <img src="images/projectpic1.jpg">
+                            <div class="project-info" id="info1">
+                                <p class="project-title" id="ptitle1">Community Connect</p>
+                                <p class="project-d" id="projectd1"></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="picitem">
+                    <a href="#" target="_blank">
+                        <div class="img-item" id="item2">
+                            <img src="images/projectpic2.jpg">
+                            <div class="project-info" id="info2">
+                                <p class="project-title" id="ptitle2">Jog Your Memory</p>
+                                <p class="project-d" id="projectd2"></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="picitem">
+                    <a href="#" target="_blank">
+                        <div class="img-item" id="item3">
+                            <img src="images/projectpic3.jpg">
+                            <div class="project-info" id="info3">
+                                <p class="project-title" id="ptitle3">Flying Monkey</p>
+                                <p class="project-d" id="projectd3"></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="picitem">
+                    <a href="#" target="_blank">
+                        <div class="img-item" id="item4">
+                            <img src="images/projectpic4.jpg">
+                            <div class="project-info" id="info4">
+                                <p class="project-title" id="ptitle4">Personal Exercises</p>
+                                <p class="project-d" id="projectd4"></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>         
+            </div> <!--end of project pic -->
+      </div> <!-- end of main -->
+      <div id="footer" style="margin-top: 50px;">
+            <p style="width: 100%; color: lightgray; text-align: center;">designed and developed by Jingle :&#41;</p>
+      </div>
+    </div> <!--end of z-index1 -->
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
