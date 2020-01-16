@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jingle Chen Design</title>
+  <meta name="description" content="Jingle Chen's self coded design portfolio. If you have any question, please contact Jingle at chen2287@purdue.edu">
+  <meta name="Jingle Chen" content="Jingle Chen">
+    
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/mycss.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Jquery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var menu = true;
+          $("#menu").click(function(){
+              if (menu == true) {
+                  menu = false;
+                  $("nav ul li").css("display", "block");
+                  $("nav span").css("text-decoration", "underline");
+                  $("nav span").css("color", "#999999");
+              } else {
+                  menu = true;
+                  $("nav ul li").css("display", "none");
+                  $("nav span").css("text-decolaration", "none");
+                  $("nav span").css("color", "#393939");
+              }
+          });
+        });
+    </script>
+</head>
+<body>
+    <div><img id="mainbg" src="images/homebackground.png"></div>
+    <div style="z-index: 1;">
+        <div id="header">
+            <div id="title"><span><a href="index.html">Jingle Chen Design</a></span></div>
+            <nav id="nav" class = "topnav">
+                <span id="menu">Menu</span>
+                
+                <ul id="ul2">
+                    <li id="currentnav"><a href="#">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="http://www.chenjingle.photos" target="_blank">Photography</a></li>
+                     <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
+      <!-- Primary Page Layout
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div id="main" class="container">
+        <div class="row">
+          <div id="mainspace"></div>
+          <div>
+            <h1 id="ps">I intend to use the most approperate approach to find and solve problems.</h1>
+          </div>
+        </div>
+      </div>
+        <div id="footer" style="position: absolute; bottom: 0px; text-align: center; color: lightgray;">
+            <p style="width: 100vw;">designed and developed by Jingle :&#41;</p>
+      </div>
+    </div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
